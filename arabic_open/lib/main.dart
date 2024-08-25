@@ -1,3 +1,4 @@
+import 'package:arabic_open/pages/courses_video.dart';
 import 'package:arabic_open/pages/coursescreen.dart';
 import 'package:arabic_open/pages/flashcards.dart';
 import 'package:arabic_open/pages/home.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         '/welcome': (context) => const Welcome(),
         '/quizzes': (context) => const QuizPage(),
         '/flashcards': (context) => const FlashCardPage(),
+        '/video': (context) => const Course_Video(),
 
       },
     );
