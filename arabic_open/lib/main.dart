@@ -2,6 +2,7 @@ import 'package:arabic_open/pages/courses_video.dart';
 import 'package:arabic_open/pages/coursescreen.dart';
 import 'package:arabic_open/pages/flashcards.dart';
 import 'package:arabic_open/pages/home.dart';
+import 'package:arabic_open/pages/login.dart';
 import 'package:arabic_open/pages/onboarding.dart';
 import 'package:arabic_open/pages/quizzes.dart';
 import 'package:arabic_open/pages/unitpage.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         '/quizzes': (context) => const QuizPage(),
         '/flashcards': (context) => const FlashCardPage(),
         '/video': (context) => const Course_Video(),
-
+        '/login': (context) => LoginPage(),
       },
     );
   }
