@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         '/welcome': (context) => const Welcome(),
         '/quizzes': (context) => const QuizPage(),
         '/flashcards': (context) => const FlashCardPage(),
-        '/video': (context) => const Course_Video(),
+        '/video': (context) => const CourseVideo(),
         '/login': (context) => LoginPage(),
       },
     );
