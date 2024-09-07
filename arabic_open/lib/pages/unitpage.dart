@@ -1,14 +1,19 @@
 import 'package:arabic_open/components/button.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class UnitPage extends StatelessWidget {
-  const UnitPage({super.key});
+
+  final user = FirebaseAuth.instance.currentUser!;
+
+  UnitPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(children: [
+        Text("LOGGED IN AS " + user.email!),
         Text("Videos"),
         Padding(
           padding: const EdgeInsets.all(15.0),

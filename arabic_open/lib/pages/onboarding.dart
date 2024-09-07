@@ -15,6 +15,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
 
   PageController _controller = PageController();
   bool onLastPage = false;
+  bool onFirstPage = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,6 +27,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             onPageChanged: (index) {
               setState((){
                 onLastPage = (index == 2);
+                onFirstPage = (index != 0);
               });
 
 
@@ -42,7 +44,16 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+
+              onFirstPage ?
               GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/welcome');
+                },
+                child: Text('back'),
+
+              )
+              :GestureDetector(
                 onTap:() {
                   _controller.previousPage(duration:
                    Duration(milliseconds: 500), 

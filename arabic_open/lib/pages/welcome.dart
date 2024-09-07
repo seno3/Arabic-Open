@@ -58,7 +58,7 @@ class Welcome extends StatelessWidget {
                       text: "I already have an account",
                       onTap: () {
                         // go to home
-                        Navigator.pushNamed(context, '/login');
+                        Navigator.pushNamed(context, '/auth');
                       },
                     ),
                   ),

@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "146003479826",
+    "project_id": "arabic-5041c",
+    "storage_bucket": "arabic-5041c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146003479826:android:ed66f9063ca2d1f17e37cb",
+        "android_client_info": {
+          "package_name": "com.dpsd.sahlan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146003479826-oiei7rgo4bjkqbs0scbehd5ruql762nj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dpsd.sahlan",
+            "certificate_hash": "45e137275cf156e1c04b5c62b3d4dc7b1a598c04"
+          }
+        },
+        {
+          "client_id": "146003479826-a41n8qfskipab0avjvim6hoouftj3gqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwVDgDFhymyzbwN0z8HdnT7qbWUM8OPdk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146003479826-a41n8qfskipab0avjvim6hoouftj3gqq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "146003479826-9j4t1n1qm2f1k4lnamrrqqb11c83p0gl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.arabicOpen"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

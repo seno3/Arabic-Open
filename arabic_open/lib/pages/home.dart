@@ -4,16 +4,25 @@ import 'package:arabic_open/pages/coursescreen.dart';
 import 'package:arabic_open/pages/onboarding.dart';
 import 'package:arabic_open/pages/unitpage.dart';
 import 'package:arabic_open/pages/vocabulary.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
+
+
 
   @override
   State<HomePage> createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
+
+  final user = FirebaseAuth.instance.currentUser!;
+
+  void signUserOut() {
+    FirebaseAuth.instance.signOut();
+  }
   int _selectedIndex = 0;
 
   void _navigateBottomBar(int index) {
@@ -23,7 +32,7 @@ class _HomePageState extends State<HomePage> {
   }
   
   final List _pages = [
-    const UnitPage(),
+    UnitPage(),
     const FlashCardPage(),
     const AlphabetsPage(),
     ];
@@ -34,6 +43,8 @@ class _HomePageState extends State<HomePage> {
       drawer: Drawer(
         backgroundColor: Colors.grey[200],
         child: Column(children: [
+
+          
           DrawerHeader(
             child: Image.asset('lib/images/dps_dubai_logo_trans.png'),
             
@@ -89,9 +100,10 @@ class _HomePageState extends State<HomePage> {
                     ),
                     ),
     
-                    Icon(
-                      Icons.person,
-                      size:45,
+                    IconButton(
+                      icon: Icon(Icons.person),
+                      onPressed: signUserOut,
+                      iconSize:45,
                       color: Colors.grey[800],
                     ),
               
