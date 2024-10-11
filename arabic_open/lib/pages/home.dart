@@ -1,10 +1,6 @@
 import 'package:arabic_open/pages/alphabets.dart';
 import 'package:arabic_open/pages/flashcards.dart';
-import 'package:arabic_open/pages/coursescreen.dart';
-import 'package:arabic_open/pages/onboarding.dart';
 import 'package:arabic_open/pages/unitpage.dart';
-import 'package:arabic_open/pages/vocabulary.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -18,11 +14,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  final user = FirebaseAuth.instance.currentUser!;
 
-  void signUserOut() {
-    FirebaseAuth.instance.signOut();
-  }
   int _selectedIndex = 0;
 
   void _navigateBottomBar(int index) {
@@ -58,16 +50,6 @@ class _HomePageState extends State<HomePage> {
                   Navigator.pushNamed(context, '/home');
                 },
             ),
-            // settings page
-            ListTile(
-              leading: Icon(Icons.settings),
-              title: Text("Settings"),
-            ),
-            ListTile(
-              leading: Icon(Icons.quiz),
-              title: Text("Quizzes"),
-            ),
-            //back to welcome
             ListTile(
               leading: Icon(Icons.arrow_back),
               title: Text("Back"),
@@ -100,12 +82,6 @@ class _HomePageState extends State<HomePage> {
                     ),
                     ),
     
-                    IconButton(
-                      icon: Icon(Icons.person),
-                      onPressed: signUserOut,
-                      iconSize:45,
-                      color: Colors.grey[800],
-                    ),
               
                 ],),
               ),

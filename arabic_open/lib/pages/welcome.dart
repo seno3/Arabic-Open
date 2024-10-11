@@ -51,17 +51,7 @@ class Welcome extends StatelessWidget {
                       },
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: MyButton(
-                      icon1: Icons.arrow_forward,
-                      text: "I already have an account",
-                      onTap: () {
-                        // go to home
-                        Navigator.pushNamed(context, '/auth');
-                      },
-                    ),
-                  ),
+                  const SizedBox(height:100)
                 ],
               ),
             ],
