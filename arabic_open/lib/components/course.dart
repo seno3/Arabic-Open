@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Course_Tile extends StatelessWidget {
   final String coursename;
@@ -29,10 +30,11 @@ class Course_Tile extends StatelessWidget {
                           Text(
                             coursename,
                             textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 24,
-                            ),
+                            style: GoogleFonts.dmSerifDisplay(
+                    color: Colors.black,
+                    fontSize: 48,
+                    height: 2,
+                  )
                           ),
                         ],
                       ),

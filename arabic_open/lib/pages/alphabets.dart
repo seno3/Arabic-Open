@@ -41,36 +41,29 @@ class AlphabetsPage extends StatelessWidget {
         
         body: Column(
           children: [
-            Container(
-              margin: const EdgeInsets.all(20),
-              decoration: BoxDecoration(
-                color: Colors.grey[300],
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: const Column(children: [
-                //alphabet
-                 Text(
-                    "Let's Learn Arabic!",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24,
-                    ),
+            const Column(children: [
+              //alphabet
+               Text(
+                  "Let's Learn Arabic!",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 24,
                   ),
-                  Text(
-                    "Get to know the Arabic writing system",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 24,
-                    ),
+                ),
+                Text(
+                  "Get to know the Arabic writing system",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 24,
                   ),
-              
-
-                //description
-
-                //pronunciation
-              ]),
-            ),
+                ),
+            
+            
+              //description
+            
+              //pronunciation
+            ]),
             Expanded(
               child: GridView.builder(
                 padding: const EdgeInsets.all(5),

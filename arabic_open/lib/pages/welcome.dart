@@ -1,5 +1,6 @@
 import 'package:arabic_open/components/button.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({super.key});
@@ -25,12 +26,13 @@ class Welcome extends StatelessWidget {
 
               //title
 
-              const Text("Learn with us!",
-                  style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 28,
+              Text("Learn with us!", 
+                  style: GoogleFonts.dmSerifDisplay(
+                    color: Colors.black,
+                    fontSize: 48,
                     height: 2,
-                  )),
+                  ), 
+                  ),
 
               const SizedBox(height: 40),
 
@@ -51,7 +53,7 @@ class Welcome extends StatelessWidget {
                       },
                     ),
                   ),
-                  const SizedBox(height:100)
+                  const SizedBox(height: 100)
                 ],
               ),
             ],

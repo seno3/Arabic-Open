@@ -12,8 +12,8 @@ class Alphabet_Tile extends StatelessWidget {
     return GestureDetector(
 
       child: Container(
-        margin: const EdgeInsets.all(20),
-        decoration: BoxDecoration(color: Colors.grey[100],borderRadius: BorderRadius.circular(12), border: Border.all(color: Colors.grey, width: 2)),
+        margin: const EdgeInsets.all(40),
+        decoration: BoxDecoration(color: Colors.white,borderRadius: BorderRadius.circular(12), border: Border.all(color: Colors.white, width: 2)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
